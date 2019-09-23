@@ -17,7 +17,7 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      background: #4c423f;
+      background: #000000;
       color: #f6f1ec;
       border: 0;
       border-radius: 4px;

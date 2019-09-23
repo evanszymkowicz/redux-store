@@ -1,4 +1,4 @@
-// updates quantity/avalibility  
+// updates quantity/avalibility
 
 import { call, select, put, all, takeLatest } from "redux-saga/effects";
 import { toast } from "react-toastify";
@@ -50,7 +50,7 @@ function* updateAmount({ id, amount }) {
 	const stockAmount = stock.data.amount;
 
 	if (amount > stockAmount) {
-		toast.error("Quantidade solicitada fora de estoque");
+		toast.error("Sorry, this item is no longer in stock");
 		return;
 	}
 
